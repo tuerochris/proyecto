@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: ;
+    font-family: 'calibri';
+}
+
+img{
+    width: 120px;
+    height: 50px;
+    float: left;
+    padding: 8px;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background: #03a9f4;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/*---hero section---*/
+
+.hero {
+    height: 100vh;
+
+    background-image:url(../imagenes/portada.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_texto{
+    color: white;
+
+
+}
